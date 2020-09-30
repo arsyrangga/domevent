@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+ 
+}
+* {
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    width: 100vw;
+    height: auto;
+    min-height: 100vh;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(232, 251, 255);
+}
+.container{
+    width: 100vw;
+    height: auto;
+    min-height: 100vh;
+ 
+}
+.navbar{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    background-color: rgb(109, 109, 109);
+    justify-content: flex-start;
+    align-items: center;
+    border: 2px solid  rgb(117, 131, 255);
+    padding: 0 7%;
+    position: sticky;
+    top:0;
+    left: 0;
+    z-index: 100;
+    box-shadow:0px 3px 8px rgba(0, 47, 77, 0.575);
+ 
+}
+.menu-icon{
+    margin-left: auto;
+    cursor: pointer; 
+    color: white;
+    font-size: 40px;
+
+ 
+}
+.menu-icon:hover{
+    font-size: 45px;
+    color:rgb(0, 255, 221);
+}  
+ 
+.brand {
+    display: contents;
+    font-size: 40px;
+    color:rgb(139, 255, 249); 
+    text-shadow: -4px 1px 1px rgb(0, 160, 160),0px 4px 1px rgb(0, 0, 0);
+    cursor: pointer;
+ 
+}
+
+.modal-menu{
+width: 100vw;
+height: 100vh;
+position: fixed;
+top: 0;
+left: 0;
+background-color: rgba(0, 0, 0, 0.800);
+display: none;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 25px;
+z-index:200;
+}
+
+.close-icon{ 
+    position: absolute;
+    color:white;
+    font-size: 2rem;
+    text-shadow: -1px 1px 1px black;
+    top: 15vh;
+    right: 7%;
+}
+.home{
+    background-color: black;
+    background-size: cover;
+    background-attachment: fixed;
+    text-shadow: -2px 2px 1px rgb(255, 0, 0), 0 3px 1px black ;
+    color: white;
+ 
+} 
+.about{
+    background-image: url(https://picsum.photos/seed/523/900);
+    background-size: cover;
+    background-attachment: fixed;
+    text-shadow: -2px 2px 1px rgb(255, 0, 0) ;
+    color: white;
+    flex-direction: column;
+    justify-content: flex-start !important;
+}
+.contact{
+    background-image: url(https://picsum.photos/seed/212/900);
+    background-size: cover;
+    background-attachment: fixed;
+    text-shadow: -2px 2px 1px rgb(255, 0, 0) ;
+    color: rgb(255, 255, 255);
+}
+.showcase {
+    background-image: url(https://picsum.photos/seed/790/900);
+    background-size: cover;
+    background-attachment: fixed;
+    text-shadow: -2px 2px 1px rgb(255, 0, 0) ;
+    color: white;
+}
+
+.alertAbout{
+    width: 100vw;
+    height: 8vh;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    background-color: orangered;
+    color: white;
+    position: sticky;
+    top:10vh; 
+    z-index: 99;
+ 
+    box-shadow: 0 2px 6px rgb(63, 63, 63);
+}
+ 
+.close-icon:hover{
+    color:orangered;
+    cursor: pointer;
+    font-size: 2.5rem;
+}
+
+.modal-menu a{
+    text-decoration: none;
+    color:white;
+    font-size: 2rem;
+    text-shadow: -1px 2px 2px rgb(255, 0, 0);
+}
+.modal-menu a:hover{
+    color: red;
+    text-shadow: -1px 1px 1px rgb(0, 0, 0)
+    font-size: 2.25rem;
+}
+.brand:hover{
+    color: rgb(0, 247, 255);
+
+}
+
+.container section{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+.home-image{
+  height: 350px;
+  width:350px;
+  border: 6px solid red;
+  box-shadow: 4px 4px 10px rgb(182, 96, 96), -4px -4px 10px rgb(182, 96, 96) ;
+  object-fit: cover;
+  border-radius: 40px 40px 40px 150px;
+  object-position: left; 
+  cursor: default;
+  animation-name: bottomToTop;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+ 
+}
+.home-image:hover{
+    height: 370px;
+    width: 370px;
+
+}
+.home-text{
+    font-size: 5rem; 
+    margin-left: 20px;
+    animation-name: rightToLeft; 
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-delay: .5s;
+    cursor: default;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.rotate-icon{
+    animation-name: rotate;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    font-size: 5rem;
+    cursor: default; 
+    animation-timing-function: linear;
+ 
+}
+@keyframes bottomToTop{
+
+from{
+transform: translateY(20vh);
+opacity: 0.1;
+}
+to{
+    transform: translateY(0vh);
+    opacity: 1;
+}
+
+}
+@keyframes rightToLeft{
+
+    from{
+    transform: translateX(20vw);
+    opacity: 0.1;
+    }
+    to{
+        transform: translateX(0vw);
+        opacity: 1;
+    }
+    
+    }
+    @keyframes rotate{
+       from{
+           transform:rotate(0deg)
+       }
+       to{
+           transform: rotate(360deg);
+       }
+    }

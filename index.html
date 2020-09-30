@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Belajar Dom Event">
+    <title>DOM Event Rangga</title>
+</head>
+
+<body>
+    <div class="modal-menu" id="modalMenu">
+        <span class="material-icons close-icon" onclick="closeModal()">close</span>
+        <a href="#home" onclick="closeModal()">HOME</a>
+        <a href="#about" onclick="closeModal()">ABOUT</a>
+        <a href="#showcase" onclick="closeModal()">SHOWCASE</a>
+        <a href="#contact" onclick="closeModal()">CONTACT</a>
+    </div>
+
+    <nav class="navbar">
+        <h3 class="brand" draggable="true">RANGGA</h3>
+        <span class="material-icons menu-icon" onclick="showModal()" id="menu-icon">menu</span>
+
+
+
+    </nav>
+    <main class="container">
+        <section class="home" id="home">
+
+            <img src="foto-orang.jpg" alt="Foto orang" class="home-image" draggable="true">
+            <h1 class="home-text">WEB PROFILE RANGGA</h1>
+
+        </section>
+        <section class="about" id="about">
+            <span class="alertAbout" id="alert">
+                <h2>selamat datang di web sederhana saya ini...</h2>
+            </span>
+            <h1 class="title">ABOUT</h1>
+        </section>
+        <section class="showcase" id="showcase">
+            <span class="material-icons rotate-icon">autorenew</span>
+        </section>
+        <section class="contact" id="contact">
+            <h1 class="title">CONTACT</h1>
+        </section>
+
+    </main>
+
+
+
+    <script src="./main.js"></script>
+
+</body>
+
+</html>
