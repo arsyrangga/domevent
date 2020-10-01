@@ -12,6 +12,57 @@
 </head>
 
 <body>
+
+    <div class="login-page" id="login-page">
+
+        <span class="material-icons close-login" onclick="closeLogin()">close</span>
+
+        <form class="login" onsubmit="login()">
+            <label for="text">
+                <h1 class="title-login">Login</h1>
+            </label>
+
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" required>
+            </div>
+
+            <button type=" submit" class="btnLogin" style="margin-left: 50px;">login</button>
+        </form>
+        <a href="#home">Belum punya akun?</a>
+    </div>
+
+    <div class="register-page" id="register-page">
+        <span class="material-icons close-register" onclick="closeRegister()">close</span>
+        <form class="login" onsubmit="register()" action='index.html'>
+            <h1 class="title-login">Register</h1>
+            <div class="formGroup">
+                <label for="username">username</label>
+                <input type="text" name="username" id='username' required>
+            </div>
+
+            <div class="formGroup">
+                <label for="email">email</label>
+                <input type="email" name="email" id='email' required>
+            </div>
+
+            <div class="formGroup">
+                <label for="password">password</label>
+                <input type="password" name="password" id='password' required>
+            </div>
+
+            <button class="btnRegister" type='submit' style="margin-left:50px;">Register</button>
+
+        </form>
+        <a href="index.html">sudah ada akun ?</a>
+
+    </div>
+
     <div class="modal-menu" id="modalMenu">
         <span class="material-icons close-icon" onclick="closeModal()">close</span>
         <a href="#home" onclick="closeModal()">HOME</a>
@@ -21,7 +72,9 @@
     </div>
 
     <nav class="navbar">
-        <h3 class="brand" draggable="true">RANGGA</h3>
+        <h3 class="brand" draggable="true">RANGGA WEB</h3>
+        <h3 class="login-text" id="login-text" onclick="showLogin()">Login</h3>
+        <h3 class="register-text" id="register-text" onclick="showRegister()">Register</h3>
         <span class="material-icons menu-icon" onclick="showModal()" id="menu-icon">menu</span>
 
 

@@ -27,3 +27,25 @@ const closeAlert = () => {
     let hideAlert = document.getElementById(`alert`)
     hideAlert.style.display = `none`
 }
+
+
+
+
+//javascript untuk login page
+const showLogin = () => {
+    let login = document.getElementById(`login-page`)
+    login.style.display = `flex`
+
+}
+const closeLogin = () => {
+    let close = document.getElementById(`login-page`)
+    close.style.display = `none`
+}
+const showRegister = () => {
+    let register = document.getElementById(`register-page`)
+    register.style.display = `flex`
+}
+const closeRegister = () => {
+    let closeReg = document.getElementById(`register-page`)
+    closeReg.style.display = `none`
+}
