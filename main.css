@@ -27,16 +27,16 @@ body{
     width: 100vw;
     height: 10vh;
     display: flex;
-    background-color: rgb(109, 109, 109);
+    background-color: rgb(0, 0, 0);
     justify-content: flex-start;
     align-items: center;
-    border: 2px solid  rgb(117, 131, 255);
-    padding: 0 7%;
+    border: 1px solid  rgb(154, 163, 248);
+    padding: 0 40px;
     position: sticky;
     top:0;
     left: 0;
-    z-index: 100;
-    box-shadow:0px 3px 8px rgba(0, 47, 77, 0.575);
+    z-index: 210;
+    box-shadow:0px 3px 8px rgb(0, 4, 255);
  
 }
 .menu-icon{
@@ -55,8 +55,8 @@ body{
 .brand {
     display: contents;
     font-size: 40px;
-    color:rgb(139, 255, 249); 
-    text-shadow: -4px 1px 1px rgb(0, 160, 160),0px 4px 1px rgb(0, 0, 0);
+    color:rgb(0, 247, 255); 
+    text-shadow: -3px 1px 1px rgb(0, 89, 255),0px 2px 1px rgb(15, 0, 150);
     cursor: pointer;
  
 }
@@ -85,31 +85,70 @@ z-index:200;
     right: 7%;
 }
 .home{
+ 
+    justify-content: flex-start;
     background-color: black;
     background-size: cover;
     background-attachment: fixed;
     text-shadow: -2px 2px 1px rgb(255, 0, 0), 0 3px 1px black ;
     color: white;
+    flex-direction: column  ;
  
 } 
 .about{
-    background-image: url(https://picsum.photos/seed/523/900);
+   display: grid !important;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr 1fr;
+   grid-template-areas: 
+   "box1 box2"
+   "box3 box4";
+}
+.box{
+    width: 100%;
+    height: 100%; 
+    padding: 35px; 
+     
+}
+.about_box1{
+    grid-template: box1;
+    background-image: url(./bg3.jpg);
     background-size: cover;
+    background-position: center;
     background-attachment: fixed;
-    text-shadow: -2px 2px 1px rgb(255, 0, 0) ;
-    color: white;
-    flex-direction: column;
-    justify-content: flex-start !important;
+    border-radius: 0 0 200px 0px;
+    border: 6px solid rgb(0, 162, 255);
+
+}
+.about_box2{
+    grid-template: box2;
+    box-shadow: inset -23px 7px 1px rgb(0, 162, 255) ;
+}
+.about_box3{
+    grid-template: box3;
+    box-shadow: inset 7px -7px 1px rgb(0, 162, 255);
+   
+
+}
+.about_box4{
+    grid-template: box4;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-image: url(./bg4.jpg);
+    border-radius: 200px 0 0px 0px;
+    border: 6px solid rgb(0, 162, 255);
+    box-shadow: inset -17px 0px 1px rgb(0, 162, 255) ;
+ 
 }
 .contact{
-    background-image: url(https://picsum.photos/seed/212/900);
+    background-image: url(./bg1.jpg);
     background-size: cover;
     background-attachment: fixed;
     text-shadow: -2px 2px 1px rgb(255, 0, 0) ;
     color: rgb(255, 255, 255);
 }
 .showcase {
-    background-image: url(https://picsum.photos/seed/790/900);
+    background-image: url(./bg2.jpg);
     background-size: cover;
     background-attachment: fixed;
     text-shadow: -2px 2px 1px rgb(255, 0, 0) ;
@@ -126,9 +165,9 @@ z-index:200;
     color: white;
     position: sticky;
     top:10vh; 
-    z-index: 99;
- 
-    box-shadow: 0 2px 6px rgb(63, 63, 63);
+    z-index: 80; 
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.61);
+    margin-bottom: auto;
 }
  
 .close-icon:hover{
@@ -144,12 +183,12 @@ z-index:200;
     text-shadow: -1px 2px 2px rgb(255, 0, 0);
 }
 .modal-menu a:hover{
-    color: red;
-    text-shadow: -1px 1px 1px rgb(0, 0, 0)
+    color: rgb(238, 255, 0);
+    text-shadow: -1px 2px 1px rgb(255, 0, 0);
     font-size: 2.25rem;
 }
 .brand:hover{
-    color: rgb(0, 247, 255);
+    color: rgb(0, 217, 255);
 
 }
 
@@ -161,18 +200,27 @@ z-index:200;
     align-items: center;
  
 }
+.home-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    height: 100%;
+}
 .home-image{
+ 
   height: 350px;
-  width:350px;
+  width:350px;  
   border: 6px solid red;
   box-shadow: 4px 4px 10px rgb(182, 96, 96), -4px -4px 10px rgb(182, 96, 96) ;
   object-fit: cover;
   border-radius: 40px 40px 40px 150px;
-  object-position: left; 
+  object-position: center;
   cursor: default;
   animation-name: bottomToTop;
   animation-duration: 1.5s;
   animation-iteration-count: 1;
+
  
 }
 .home-image:hover{
