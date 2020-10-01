@@ -23,3 +23,7 @@ const closeModal = () => {
     //  alert.style.display = `flex`
 }
 
+const closeAlert = () => {
+    let hideAlert = document.getElementById(`alert`)
+    hideAlert.style.display = `none`
+}
