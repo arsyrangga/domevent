@@ -6,10 +6,14 @@ const showModal = () => {
     //yang mau dimunculkan
     let modal = document.getElementById(`modalMenu`)
     let menuhide = document.getElementById(`menu-icon`)
+    let loginhide = document.getElementById(`login-text`)
+    let registerhide = document.getElementById(`register-text`)
     // let alert = document.getElementById(`alert`)
     //kita atur styling element modalnya
     menuhide.style.display = `none`
     modal.style.display = `flex`
+    loginhide.style.display = `none`
+    registerhide.style.display = `none`
     // alert.style.display = `none`
 
 }
@@ -17,9 +21,13 @@ const showModal = () => {
 const closeModal = () => {
     let hide = document.getElementById(`modalMenu`)
     let menuhide = document.getElementById(`menu-icon`)
+    let loginhide = document.getElementById(`login-text`)
+    let registerhide = document.getElementById(`register-text`)
     // let alert = document.getElementById(`alert`)
     menuhide.style.display = `flex`
     hide.style.display = `none`
+    loginhide.style.display = `flex`
+    registerhide.style.display = `flex`
     //  alert.style.display = `flex`
 }
 

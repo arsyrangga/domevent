@@ -19,20 +19,30 @@
 
         <form class="login" onsubmit="login()">
             <label for="text">
-                <h1 class="title-login">Login</h1>
+                <h2 class="title-login">Login</h2>
             </label>
 
             <div class="form-group">
-                <label for="username">Username</label>
-                <input type="text" name="username" id="username" required>
+                <label for="username">Username:</label>
+                <input type="text" name="username" id="username" required
+                    style="background-color:red; border:1px solid red; box-shadow:  0 1px 1px white;color: white; margin-left: 5px;margin-bottom: 2px;">
             </div>
 
             <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password" required>
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" required
+                    style="background-color:red; border:1px solid red; box-shadow: 0 1px 1px white;color: white;margin-left: 5px;margin-bottom: 15px;">
             </div>
 
-            <button type=" submit" class="btnLogin" style="margin-left: 50px;">login</button>
+            <button type=" submit" class="btnLogin" style="
+            margin-left: 25px;
+            color: white;
+            background:black;
+            width: 100px;
+            height: 25px;
+            border-radius: 4px;
+            border:none;
+            cursor: pointer;">login</button>
         </form>
         <a href="#home">Belum punya akun?</a>
     </div>
@@ -40,23 +50,33 @@
     <div class="register-page" id="register-page">
         <span class="material-icons close-register" onclick="closeRegister()">close</span>
         <form class="login" onsubmit="register()" action='index.html'>
-            <h1 class="title-login">Register</h1>
+            <h2 class="title-login">Register</h2>
             <div class="formGroup">
-                <label for="username">username</label>
-                <input type="text" name="username" id='username' required>
+                <label for="username">Username:</label>
+                <input type="text" name="username" id='username' required
+                    style="background-color:red; border:1px solid red; box-shadow: 0 1px 1px white; color: white;margin-left: 5px;margin-bottom: 2px;">
             </div>
 
             <div class="formGroup">
-                <label for="email">email</label>
-                <input type="email" name="email" id='email' required>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id='email' required
+                    style="background-color:red; border:1px solid red; box-shadow: 0 1px 1px white;color: white;margin-left: 37px;margin-bottom: 2px;">
             </div>
 
             <div class="formGroup">
-                <label for="password">password</label>
-                <input type="password" name="password" id='password' required>
+                <label for="password">Password:</label>
+                <input type="password" name="password" id='password' required
+                    style="background-color:red; border:1px solid red; box-shadow: 0 1px 1px white;color: white;margin-left: 5px;margin-bottom: 25px;">
             </div>
 
-            <button class="btnRegister" type='submit' style="margin-left:50px;">Register</button>
+            <button class="btnRegister" type='submit' style="margin-left:25px;
+            color: white;
+            cursor: pointer;
+            background: #000000;
+            width: 100px;
+            height: 25px;
+            border-radius: 4px;
+            border: none;">Register</button>
 
         </form>
         <a href="index.html">sudah ada akun ?</a>
