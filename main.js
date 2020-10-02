@@ -31,10 +31,31 @@ const closeModal = () => {
     //  alert.style.display = `flex`
 }
 
+//menutup alert home
 const closeAlert = () => {
     let hideAlert = document.getElementById(`alert`)
     hideAlert.style.display = `none`
 }
+
+//looping image
+let showcase = document.getElementById(`wrapper_showcase`)
+// showcase.innerHTML += ` 
+// <img src="https://picsum.photos/seed/411/300" alt="gambar rusak" /> 
+// `
+
+for (var i = 0; i < 45; i++) {
+    showcase.innerHTML += `
+<img src='https://picsum.photos/seed/${60 + i}/130' alt='Gambar ke ${i}'/>
+`
+}
+
+
+
+
+
+
+
+
 
 
 
