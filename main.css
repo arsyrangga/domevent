@@ -148,7 +148,7 @@ body{
     color:rgb(0, 247, 255); 
     text-shadow: -3px 1px 1px rgb(0, 89, 255),0px 2px 1px rgb(15, 0, 150);
     cursor: pointer;
-    left: 100px;
+    left: 25px;
  
 }
 
@@ -177,7 +177,7 @@ z-index:200;
 }
 .home{
     display: flex;
-    height: 100vh;
+    height: auto;
     justify-content: flex-start;
     background-color: black;
     background-size: cover;
@@ -246,15 +246,22 @@ z-index:200;
     color: rgb(0, 0, 0); 
     flex-direction: column; 
     justify-content: center; 
+    box-shadow: inset 7px -7px 1px rgb(0, 162, 255),inset -24px 0 1px rgb(0, 162, 255);
+ 
 }
 .wrapper_showcase{
     width: auto;
     height: auto;
     text-align: center;
     padding: 40px 40px; 
+    margin-bottom: 60px;
+    margin-top: 30px;
 }
 .showcase_title{
     font-size: 2rem; 
+    margin-top: 30px;
+    text-shadow: -1px 1px 1px rgb(0, 162, 255);
+    color: rgb(8, 7, 80);
  
 }
 .wrapper_showcase img{
@@ -272,7 +279,7 @@ position: absolute;
 right: 100px;
 cursor: pointer;
 text-shadow: 1px 1px 0px rgb(76, 0, 255), -1px -1px 0px rgb(76, 0, 255);
-display: none;
+ 
 }
 .alertAbout{
     width: 100vw;
@@ -326,7 +333,7 @@ display: none;
     justify-content: center;
     align-items: center;
     gap: 40px;
-    height: auto;
+    height: 100vh;
     margin-bottom: auto;
 }
 .home-image{
